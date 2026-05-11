@@ -1,0 +1,121 @@
+
+body {
+    background-color: #dcdcdc;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+/* TITULOS */
+
+#titulo,
+#tituloImagen {
+    text-align: center;
+    color: #003366;
+    margin-bottom: 20px;
+}
+
+/* TABLA PRINCIPAL */
+
+#tablaInstituto {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    margin-bottom: 40px;
+}
+
+/* CONTENEDOR TABLAS */
+
+#contenedorTablas {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* TABLAS PEQUEÑAS */
+
+#tablaIzquierda,
+#tablaCentro,
+#tablaDerecha {
+    display: inline-table;
+    vertical-align: top;
+    margin: 10px;
+    background-color: white;
+    border-collapse: collapse;
+    width: 300px;
+}
+
+/* TABLA PERFIL */
+
+#tablaImagen {
+    width: 70%;
+    margin: auto;
+    background-color: white;
+    border-collapse: collapse;
+}
+
+/* ENCABEZADOS */
+
+.encabezado {
+    background-color: #003366;
+    color: white;
+}
+
+/* FILAS */
+
+.fila {
+    background-color: white;
+}
+
+/* CELDAS GENERALES */
+
+.celda {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+/* CELDAS PERFIL */
+
+.celdaImagen,
+.celdaPerfil {
+    border: 1px solid black;
+    padding: 10px;
+    background-color: white;
+}
+
+/* ALINEACION TABLAS */
+
+#tablaIzquierda .celda {
+    text-align: left;
+}
+
+#tablaCentro .celda {
+    text-align: center;
+}
+
+#tablaDerecha .celda {
+    text-align: right;
+}
+
+.celdaPerfil {
+    text-align: left;
+}
+
+.celdaImagen {
+    text-align: center;
+}
+
+/* PIE TABLA */
+
+.pieTabla {
+    background-color: #d9d9d9;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* IMAGEN */
+
+img {
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+}
+

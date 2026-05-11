@@ -1,0 +1,243 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Tablas</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- TITULO -->
+    <h1 id="titulo">Registro Instituto</h1>
+
+    <!-- TABLA PRINCIPAL -->
+    <table id="tablaInstituto" border="1">
+
+        <thead>
+
+            <tr class="encabezado">
+
+                <th class="celda">Nombre</th>
+                <th class="celda">Apellido</th>
+                <th class="celda">Edad</th>
+                <th class="celda">Número</th>
+                <th class="celda">Correo</th>
+                <th class="celda">Dirección</th>
+                <th class="celda">Programa</th>
+                <th class="celda">Semestre</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            <tr class="fila">
+
+                <td class="celda">Felipe</td>
+                <td class="celda">Escobar</td>
+                <td class="celda">20</td>
+                <td class="celda">3001234567</td>
+                <td class="celda">felipe@gmail.com</td>
+                <td class="celda">Bogotá</td>
+                <td class="celda">ADSO</td>
+                <td class="celda">4</td>
+
+            </tr>
+
+        </tbody>
+
+        <tfoot>
+
+            <tr class="pieTabla">
+
+                <td class="celda" colspan="8">
+                    Registro actualizado
+                </td>
+
+            </tr>
+
+        </tfoot>
+
+    </table>
+
+    <!-- CONTENEDOR TABLAS -->
+    <div id="contenedorTablas">
+
+        <!-- TABLA IZQUIERDA -->
+        <table id="tablaIzquierda" border="1">
+
+            <thead>
+
+                <tr class="encabezado">
+
+                    <th class="celda">Curso</th>
+                    <th class="celda">Nota</th>
+                    <th class="celda">Estado</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr class="fila">
+
+                    <td class="celda">HTML</td>
+                    <td class="celda">4.5</td>
+                    <td class="celda">Aprobado</td>
+
+                </tr>
+
+                <tr class="fila">
+
+                    <td class="celda">CSS</td>
+                    <td class="celda">4.8</td>
+                    <td class="celda">Aprobado</td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+        <!-- TABLA CENTRO -->
+        <table id="tablaCentro" border="1">
+
+            <thead>
+
+                <tr class="encabezado">
+
+                    <th class="celda">Ciudad</th>
+                    <th class="celda">Departamento</th>
+                    <th class="celda">Clima</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr class="fila">
+
+                    <td class="celda">Bogotá</td>
+                    <td class="celda">Cundinamarca</td>
+                    <td class="celda">Frío</td>
+
+                </tr>
+
+                <tr class="fila">
+
+                    <td class="celda">Medellín</td>
+                    <td class="celda">Antioquia</td>
+                    <td class="celda">Templado</td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+        <!-- TABLA DERECHA -->
+        <table id="tablaDerecha" border="1">
+
+            <thead>
+
+                <tr class="encabezado">
+
+                    <th class="celda">Producto</th>
+                    <th class="celda">Precio</th>
+                    <th class="celda">Cantidad</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr class="fila">
+
+                    <td class="celda">Mouse</td>
+                    <td class="celda">$50.000</td>
+                    <td class="celda">3</td>
+
+                </tr>
+
+                <tr class="fila">
+
+                    <td class="celda">Teclado</td>
+                    <td class="celda">$80.000</td>
+                    <td class="celda">2</td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+    <!-- TITULO PERFIL -->
+    <h2 id="tituloImagen">Perfil Producto</h2>
+
+    <!-- TABLA PERFIL -->
+    <table id="tablaImagen" border="1">
+
+        <thead>
+
+            <tr class="encabezado">
+
+                <th class="celda">Imagen</th>
+                <th class="celda">Información</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            <tr class="fila">
+
+                <!-- IMAGEN -->
+                <td class="celdaImagen">
+
+                    <img src="img/maxres2.jpg"
+                         alt="Melao Ricura"
+                         width="220">
+
+                </td>
+
+                <!-- PERFIL -->
+                <td class="celdaPerfil">
+
+                    <h3>Melao Ricura</h3>
+
+                    <p>
+                        Producto artesanal elaborado con ingredientes tradicionales.
+                    </p>
+
+                    <p><strong>Precio:</strong> $15.000</p>
+
+                    <p><strong>Sabor:</strong> Dulce tradicional</p>
+
+                    <p><strong>Presentación:</strong> 500g</p>
+
+                    <p><strong>Disponibilidad:</strong> En stock</p>
+
+                </td>
+
+            </tr>
+
+        </tbody>
+
+    </table>
+
+</body>
+
+</html>
+```
