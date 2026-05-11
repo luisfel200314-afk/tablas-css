@@ -1,6 +1,15 @@
 
 body {
-    background-color: #dcdcdc;
+
+    /* IMAGEN DE FONDO */
+    background-image: url("img/guts.jpg");
+
+    /* AJUSTES DEL FONDO */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
     font-family: Arial, sans-serif;
     margin: 20px;
 }
@@ -10,17 +19,24 @@ body {
 #titulo,
 #tituloImagen {
     text-align: center;
-    color: #003366;
+    color: white;
     margin-bottom: 20px;
+
+    /* SOMBRA TEXTO */
+    text-shadow: 2px 2px 5px black;
 }
 
 /* TABLA PRINCIPAL */
 
 #tablaInstituto {
     width: 100%;
-    border-collapse: collapse;
-    background-color: white;
+    border-collapse: separate;
+    border-spacing: 0;
+    background-color: rgba(255, 255, 255, 0.95);
     margin-bottom: 40px;
+
+    border-radius: 15px;
+    overflow: hidden;
 }
 
 /* CONTENEDOR TABLAS */
@@ -38,9 +54,15 @@ body {
     display: inline-table;
     vertical-align: top;
     margin: 10px;
-    background-color: white;
-    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.95);
+
+    border-collapse: separate;
+    border-spacing: 0;
+
     width: 300px;
+
+    border-radius: 15px;
+    overflow: hidden;
 }
 
 /* TABLA PERFIL */
@@ -48,8 +70,14 @@ body {
 #tablaImagen {
     width: 70%;
     margin: auto;
-    background-color: white;
-    border-collapse: collapse;
+
+    background-color: rgba(255, 255, 255, 0.95);
+
+    border-collapse: separate;
+    border-spacing: 0;
+
+    border-radius: 15px;
+    overflow: hidden;
 }
 
 /* ENCABEZADOS */
@@ -62,7 +90,7 @@ body {
 /* FILAS */
 
 .fila {
-    background-color: white;
+    background-color: transparent;
 }
 
 /* CELDAS GENERALES */
@@ -78,7 +106,7 @@ body {
 .celdaPerfil {
     border: 1px solid black;
     padding: 10px;
-    background-color: white;
+    background-color: transparent;
 }
 
 /* ALINEACION TABLAS */
@@ -111,7 +139,7 @@ body {
     font-weight: bold;
 }
 
-/* IMAGEN */
+/* IMAGENES */
 
 img {
     border-radius: 10px;
