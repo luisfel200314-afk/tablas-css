@@ -18,9 +18,7 @@
     <table id="tablaInstituto" border="1">
 
         <thead>
-
             <tr class="encabezado">
-
                 <th class="celda">Nombre</th>
                 <th class="celda">Apellido</th>
                 <th class="celda">Edad</th>
@@ -29,15 +27,11 @@
                 <th class="celda">Dirección</th>
                 <th class="celda">Programa</th>
                 <th class="celda">Semestre</th>
-
             </tr>
-
         </thead>
 
         <tbody>
-
             <tr class="fila">
-
                 <td class="celda">Felipe</td>
                 <td class="celda">Escobar</td>
                 <td class="celda">20</td>
@@ -46,21 +40,13 @@
                 <td class="celda">Bogotá</td>
                 <td class="celda">ADSO</td>
                 <td class="celda">4</td>
-
             </tr>
-
         </tbody>
 
         <tfoot>
-
             <tr class="pieTabla">
-
-                <td class="celda" colspan="8">
-                    Registro actualizado
-                </td>
-
+                <td class="celda" colspan="8">Registro actualizado</td>
             </tr>
-
         </tfoot>
 
     </table>
@@ -220,42 +206,101 @@
 
     </table>
 
-    <!-- BORDES -->
-    <h2 id="tituloImagen">Ejemplos de Border Style</h2>
+    <!-- BORDER STYLE -->
+    <h2 class="tituloSecundario">Ejemplos de Border Style</h2>
 
     <div class="contenedor-bordes">
-
         <h1 class="borde1">vos sos una perrota</h1>
         <h1 class="borde2">relatigos</h1>
         <h1 class="borde3">la enciendo a pata</h1>
         <h1 class="borde4">inmediatamente mk</h1>
         <h1 class="borde5">la mujer ne*** es malagradecidisima</h1>
         <h1 class="borde6">traigan 24 k de per***</h1>
-        <h1 class="borde7">ja si, como mo</h1>
+        <h1 class="borde7">ja si, como no</h1>
         <h1 class="borde8">care nalga</h1>
         <h1 class="borde9">ella viene de mama</h1>
         <h1 class="borde10">no la bese, no la bese</h1>
+    </div>
+
+    <!-- COMPARACION -->
+    <div class="contenedor-imagenes">
+
+        <div class="comparacion">
+            <div class="contain"></div>
+            <div class="cover"></div>
+        </div>
 
     </div>
 
-    <!-- 🔥 BACKGROUND ATTACHMENT (ESTO TE FALTABA) -->
-
-    <h2 id="tituloImagen">Ejemplos Background Attachment</h2>
-
-    <div class="demo fixed">
-        <h3>Fixed Background</h3>
-        <p>Este fondo se queda quieto mientras haces scroll</p>
+    <!-- BACKGROUNDS -->
+    <h1>FONDO SCROLL</h1>
+    <div class="scroll">
+        <p>El fondo se mueve junto con el scroll de la página.</p>
     </div>
 
-    <div class="demo scroll">
-        <h3>Scroll Background</h3>
-        <p>Este fondo se mueve con la página</p>
+    <h1>FONDO FIXED</h1>
+    <div class="fixed">
+        <p>El fondo queda fijo mientras haces scroll.</p>
     </div>
 
-    <div class="demo local">
-        <h3>Local Background</h3>
-        <p>Este fondo se mueve dentro del contenedor</p>
+    <h1>FONDO LOCAL</h1>
+    <div class="local">
+        <p>El fondo se mueve dentro del contenedor con scroll interno.</p>
     </div>
+
+    <!-- DEGRADADOS -->
+    <div class="degradado-lineal"></div>
+    <div class="degradado-dos-colores"></div>
+    <div class="degradado-personalizado"></div>
+
+    <div style="
+        width: 400px;
+        height: 200px;
+        margin: 50px auto;
+        border: 2px solid #000;
+        background: linear-gradient(to top right, red, white, blue);
+    "></div>
+
+    <!-- RADIALES -->
+    <div style="
+        height: 200px;
+        width: 400px;
+        margin: 50px auto;
+        border: 5px solid black;
+        background-image: radial-gradient(circle closest-side at 20% 20%, red, green, orange);
+    "></div>
+
+    <div style="
+        height: 200px;
+        width: 400px;
+        margin: 50px auto;
+        border: 5px solid black;
+        background-image: radial-gradient(circle farthest-corner at 20% 20%, red, green, orange);
+    "></div>
+
+    <div style="
+        height: 200px;
+        width: 400px;
+        margin: 50px auto;
+        border: 5px solid black;
+        background-image: repeating-radial-gradient(circle at 20% 20%, magenta 10%, green 20%, orange 30%);
+    "></div>
+
+    <div style="
+        height: 300px;
+        width: 500px;
+        margin: 50px auto;
+        border: 6px solid black;
+        background-image: repeating-radial-gradient(circle at center, red 0%, blue 20%, yellow 40%);
+        animation: girar 5s linear infinite;
+    "></div>
+
+    <style>
+    @keyframes girar {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+    </style>
 
 </body>
 

@@ -1,6 +1,5 @@
 body {
 
-    /* IMAGEN DE FONDO PRINCIPAL */
     background-image: url("img/guts.jpg");
     background-size: cover;
     background-position: center;
@@ -81,38 +80,26 @@ body {
     background-color: transparent;
 }
 
-/* CELDAS CON DEGRADADO AZUL */
+/* CELDAS */
 
 .celda {
     border: 1px solid black;
     padding: 10px;
-    background: linear-gradient(
-        135deg,
-        #1e3c72,
-        #2a5298,
-        #6dd5ed,
-        #b2fefa
-    );
+    background: linear-gradient(135deg, #1e3c72, #2a5298, #6dd5ed, #b2fefa);
     color: white;
 }
 
-/* CELDAS PERFIL */
+/* PERFIL */
 
 .celdaPerfil,
 .celdaImagen {
     border: 1px solid black;
     padding: 10px;
-    background: linear-gradient(
-        135deg,
-        #1e3c72,
-        #2a5298,
-        #6dd5ed,
-        #b2fefa
-    );
+    background: linear-gradient(135deg, #1e3c72, #2a5298, #6dd5ed, #b2fefa);
     color: white;
 }
 
-/* ALINEACION TABLAS */
+/* ALINEACION */
 
 #tablaIzquierda .celda { text-align: left; }
 #tablaCentro .celda { text-align: center; }
@@ -138,47 +125,146 @@ img {
 }
 
 /* ========================= */
-/* DEMO BACKGROUND ATTACHMENT */
+/* COMPARACION DE IMAGENES */
 /* ========================= */
 
-.demo {
-    width: 70%;
-    margin: 20px auto;
-    padding: 20px;
-    color: white;
-    border-radius: 15px;
-    border: 2px solid white;
-    text-shadow: 2px 2px 5px black;
+.contenedor-imagenes {
+    width: 80%;
+    margin: 50px auto;
 }
 
-/* FIXED */
-.fixed {
-    background-image: url("img/fondo1.jpg");
-    background-size: 200%;
-    background-position: center;
-    background-attachment: fixed;
+.comparacion {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
+    flex-wrap: wrap;
 }
 
-/* SCROLL */
+.contain,
+.cover {
+    width: 500px;
+    height: 300px;
+    border: 8px solid orange;
+
+    background-image:
+        url("araña3.jpg"),
+        url("paisajeara.jpg"),
+        url("fondo_naranja.jpg");
+
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: center, center, center;
+}
+
+/* IZQUIERDA */
+.contain {
+    background-size:
+        150px 100px,
+        contain,
+        cover;
+}
+
+/* DERECHA */
+.cover {
+    background-size:
+        500px 300px,
+        cover,
+        cover;
+}
+
+/* ========================= */
+/* SCROLL / FIXED / LOCAL */
+/* ========================= */
+
 .scroll {
-    background-image: url("img/fondo2.jpg");
-    background-size: 200%;
+    height: 500px;
+    background-image: url("paisaje.jpg");
+    background-size: cover;
     background-position: center;
     background-attachment: scroll;
+
+    border: 5px solid blue;
+    color: white;
+    text-align: center;
+    padding-top: 150px;
+    margin-bottom: 50px;
 }
 
-/* LOCAL */
+.fixed {
+    height: 500px;
+    background-image: url("paisaje.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    border: 5px solid red;
+    color: white;
+    text-align: center;
+    padding-top: 150px;
+    margin-bottom: 50px;
+}
+
 .local {
-    background-image: url("img/fondo3.jpg");
-    background-size: 200%;
+    width: 500px;
+    height: 300px;
+    overflow: scroll;
+
+    border: 5px solid green;
+    margin: auto;
+
+    background-image: url("paisaje.jpg");
+    background-size: cover;
     background-position: center;
     background-attachment: local;
-    height: 250px;
-    overflow: auto;
+
+    color: white;
+    padding: 20px;
+    font-size: 25px;
+    margin-bottom: 100px;
 }
 
 /* ========================= */
-/* BORDES ESTILO GAMER NEÓN */
+/* DEGRADADOS */
+/* ========================= */
+
+.degradado-lineal {
+    width: 500px;
+    height: 250px;
+    margin: 40px auto;
+    border: 5px solid black;
+
+    background: linear-gradient(to right, red, yellow, green, blue);
+}
+
+.degradado-dos-colores {
+    width: 500px;
+    height: 250px;
+    margin: 40px auto;
+    border: 5px solid black;
+
+    background: linear-gradient(to top right, red 30%, blue 100%);
+
+    color: white;
+    text-align: center;
+    padding-top: 80px;
+    font-family: Arial;
+}
+
+.degradado-personalizado {
+    width: 500px;
+    height: 250px;
+    margin: 40px auto;
+    border: 5px solid black;
+
+    background: linear-gradient(200deg, #0000ff 10%, #ffc0cb 50%, #73ff 75%);
+
+    color: white;
+    text-align: center;
+    padding-top: 80px;
+}
+
+/* ========================= */
+/* BORDES GAMER */
 /* ========================= */
 
 .contenedor-bordes {
@@ -206,8 +292,6 @@ img {
 .contenedor-bordes h1:hover {
     transform: scale(1.08);
 }
-
-/* NEÓN BORDES */
 
 .borde1 { border: 3px solid cyan; box-shadow: 0 0 12px cyan; }
 .borde2 { border: 3px dashed red; box-shadow: 0 0 12px red; }
