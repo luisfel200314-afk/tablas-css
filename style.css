@@ -553,3 +553,122 @@ background:linear-gradient(45deg,#ee0979,#ff6a00);
     mask-image:
     linear-gradient(to bottom, transparent 5%, black 75%);
 }
+/*ultimo*
+body{
+    background:#111;
+    color:white;
+    font-family:Arial;
+}
+
+.panel{
+    text-align:center;
+}
+
+.fila{
+    display:flex;
+    justify-content:center;
+    gap:80px;
+    margin:40px 0;
+}
+
+.bloque{
+    text-align:center;
+}
+
+/* COMPUTADOR */
+
+.computador-sencillo{
+    width:220px;
+}
+
+.pantalla-marco{
+    width:200px;
+    height:120px;
+    border:6px solid white;
+    border-radius:10px;
+}
+
+.base{
+    width:70px;
+    height:18px;
+    border:6px solid white;
+    border-top:none;
+    margin:auto;
+}
+
+
+/* IMAGEN SOLA */
+
+.cascada-natural{
+    width:220px;
+    height:130px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+
+/* FUSIÓN */
+
+.contenedor-fusion{
+    position:relative;
+    width:220px;
+    height:150px;
+    margin:40px auto;
+}
+
+.cascada-fusionada{
+    width:192px;
+    height:112px;
+    object-fit:cover;
+    position:absolute;
+    top:19px;
+    left:14px;
+    border-radius:4px;
+}
+
+.sobrepuesto{
+    position:absolute;
+    z-index:3;
+}
+
+.reflejo-pantalla{
+    position:absolute;
+    inset:0;
+    background:linear-gradient(
+    135deg,
+    rgba(255,255,255,.15),
+    transparent 50%
+    );
+}
+
+.contenedor{
+    width:700px;
+    margin:50px auto;
+    font-family:Arial;
+    line-height:1.8;
+}
+
+
+/* FOTO CON SHAPE OUTSIDE */
+
+.foto-forma{
+    width:250px;
+    height:250px;
+    object-fit:cover;
+    float:left;
+    margin-right:25px;
+    margin-bottom:15px;
+    border-radius:50%;
+    shape-outside:circle(50%);
+    clip-path:circle(50%);
+}
+.gradient-text{
+
+    background:linear-gradient(90deg,#f00000,#fc00c5);
+
+    -webkit-background-clip:text !important;
+
+    -webkit-text-fill-color:transparent !important;
+
+    color:transparent !important;
+}
