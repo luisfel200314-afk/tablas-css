@@ -1,6 +1,6 @@
 body {
 
-    background-image: url("img/guts.jpg");
+    background-image: url("img/paisaje.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -664,11 +664,149 @@ body{
 }
 .gradient-text{
 
-    background:linear-gradient(90deg,#f00000,#fc00c5);
+    background:linear-gradient(90deg,#f00000,#491d40);
 
     -webkit-background-clip:text !important;
 
     -webkit-text-fill-color:transparent !important;
 
     color:transparent !important;
+}
+/* ===================== */
+/* CONTENEDOR PRINCIPAL */
+/* ===================== */
+
+.mapa-3d{
+    position:relative;
+    width:500px;
+    height:450px;
+    margin:80px auto;
+}
+
+/* ===================== */
+/* DISCO MAPA */
+/* ===================== */
+
+.disco-mapa{
+
+    position:absolute;
+    bottom:0px;
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:500px;
+    height:220px;
+
+    border-radius:50%;
+
+    overflow:hidden;
+
+    background-image:url("img/colombia-mapa.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    border:6px solid white;
+
+    box-shadow:
+        0 20px 45px rgba(0,0,0,.45);
+
+    z-index:2;
+}
+
+/* sombra inferior */
+.disco-mapa::after{
+
+    content:"";
+    position:absolute;
+
+    bottom:-15px;
+    left:0;
+
+    width:100%;
+    height:40px;
+
+    border-radius:50%;
+
+    background:black;
+
+    z-index:-1;
+}
+
+/* ===================== */
+/* TRIANGULO */
+/* ===================== */
+
+.haz-luz{
+
+    position:absolute;
+    left:50%;
+    bottom:110px;
+
+    transform:translateX(-50%);
+
+    width:180px;
+    height:260px;
+
+    clip-path:polygon(
+        25% 0%,
+        75% 0%,
+        50% 100%
+    );
+
+    background:linear-gradient(
+        to top,
+        red 0%,
+        blue 30%,
+        yellow 100%
+    );
+
+    z-index:3;
+}
+
+/* borde del triangulo */
+.haz-luz::before{
+
+    content:"";
+    position:absolute;
+
+    inset:-6px;
+
+    clip-path:polygon(
+        25% 0%,
+        75% 0%,
+        50% 100%
+    );
+
+    background:black;
+
+    z-index:-1;
+}
+
+/* ===================== */
+/* PUNTO ROJO */
+/* ===================== */
+
+.punto-mapa{
+
+    position:absolute;
+
+    left:50%;
+    bottom:85px;
+
+    transform:translateX(-50%);
+
+    width:30px;
+    height:30px;
+
+    background:red;
+
+    border-radius:50%;
+
+    box-shadow:
+        0 0 25px red,
+        0 0 40px crimson;
+
+    z-index:4;
 }
